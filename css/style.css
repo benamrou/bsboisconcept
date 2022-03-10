@@ -68,8 +68,10 @@ img.img-polaroid {
     line-height: 20px;
     padding: 15px 35px;
     height: 50px;
-    border: 2px solid #5DA5E4;
-    background: white;
+    border: 2px solid #632c00;
+    /*background: white;*/
+    background-color: #784212;
+
     transition: all 0.4s;
     color: #202020;
     border-radius: 100px;
@@ -105,14 +107,14 @@ header .navbar {
     min-height: 70px;
     padding: 18px 0;
     /* background: #FFFFFF; */
-    background: #6E2C00 ;
+    background: #91BD09 ;
 }
 .home-page header .navbar-default {
     background: rgba(0, 50, 142, 0.01);
     /* position: absolute; */
     width: 100%;
     /*background: #fff;*/
-    background: #6E2C00;
+    background: #91BD09;
 
 
 }
@@ -466,7 +468,8 @@ img.img-center {
     font-style: italic;
 }
 section.hero-text {
-    background: #EA2D2D;
+    /*background: #EAD2D;*/
+    background-color: #632c00;
     padding: 50px 0 50px 0;
     color: #fff;
 }
@@ -595,7 +598,8 @@ section.hero-text h1 {
 ==================================== */
 
 #inner-headline {
-    background: #EA2D2D;
+    /*background: #EA2D2D;*/
+    background-color: #784212;
     position: relative;
     margin: 0;
     padding: 0;
@@ -1151,7 +1155,7 @@ ul.team-detail li ul.social-network li i {
     margin: 0 auto;
     width: 100%;
     /* background: #fd0000; */
-    background: #6E2C00;
+    background: #91BD09;
 }
 .pricing-box-item {
     border: 1px solid #e6e6e6;
