@@ -63,14 +63,15 @@ img.img-polaroid {
 }
 .btn-default {
     font-size: 17px;
-    margin: 30px 0 10px;
-    margin-right: 10px;
+    float: right;
+    /* margin: 30px 0 10px;
+    margin-right: 10px;*/
     line-height: 20px;
     padding: 15px 35px;
     height: 50px;
-    border: 2px solid #632c00;
-    /*background: white;*/
-    background-color: #91BD09;
+    border: 2px solid black;
+    background: white;
+    /*background-color: #91BD09;*/
 
 
     transition: all 0.4s;
@@ -116,7 +117,6 @@ header .navbar {
     width: 100%;
     /*background: #fff;*/
     background: #91BD09;
-
 
 }
 header .nav li a:hover,
@@ -228,7 +228,7 @@ header ul.nav li ul li a {
 }
 
 .active {
-    border-bottom: 1px black solid !important;
+    border-bottom: 1px darkslategray solid !important;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover {
@@ -267,7 +267,7 @@ header ul.nav li ul li ul {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: black;
+    color: darkslategray;
     /*background: #5DA5E4;*/
     /*background-color: #784212; */
 }
@@ -409,7 +409,7 @@ select.selectmenu {
 .testimonial-solid {
     padding: 80px 0 80px 0;
     margin: 0 0 0 0;
-    background: rgba(0, 0, 0, 0.67);
+    /*background: rgba(0, 0, 0, 0.67);*/
     text-align: center;
 }
 .testi-icon-area {
@@ -461,7 +461,7 @@ img.img-center {
 .testimonial-area {
     padding: 0 0 0 0;
     margin: 0;
-    background: url('../img/slides/1.jpg') 0 -371px;
+    /*background: url('../img/slides/1.jpg') 0 -371px;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -475,8 +475,8 @@ img.img-center {
 }
 section.hero-text {
     /*background: #EAD2D;*/
-    background-color: #632c00;
-    padding: 50px 0 50px 0;
+    background-color: darkorchid;
+    padding: 0 0 0 0;
     color: #fff;
 }
 section.hero-text h1 {
@@ -604,8 +604,8 @@ section.hero-text h1 {
 ==================================== */
 
 #inner-headline {
-    /*background: #EA2D2D;*/
-    background-color: #91BD09;
+    background-color: #EA2D2D;
+    /*background-color: #91BD09;*/
     position: relative;
     margin: 0;
     padding: 0;
@@ -1279,7 +1279,7 @@ footer .widget .flickr_badge img {
 footer {
     padding: 50px 0 0 0;
     color: #969696;
-    border-top: 4px solid #EA2D2D;
+    border-top: 4px solid #91BD09;
 }
 footer a {
     color: #fff;
@@ -1310,6 +1310,7 @@ ul.social-network li {
     display: inline;
     margin: 0 5px;
     border: 1px solid #262A45;
+    background-color: black;
     padding: 5px 0 0;
     width: 32px;
     display: inline-block;
@@ -1323,7 +1324,7 @@ ul.social-network li {
     padding: 0;
     padding-top: 30px;
     margin: 20px 0 0 0;
-    background: #171717;
+    background: #91BD09;
 }
 #sub-footer p {
     margin: 0;

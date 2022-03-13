@@ -12,21 +12,21 @@ $comment = ($_GET['comment']) ?$_GET['comment'] : $_POST['comment'];
 if ($_POST) $post=1;
 
 //Simple server side validation for POST data, of course, you should validate the email
-if (!$name) $errors[count($errors)] = 'Please enter your name.';
-if (!$email) $errors[count($errors)] = 'Please enter your email.'; 
-if (!$comment) $errors[count($errors)] = 'Please enter your message.'; 
+if (!$name) $errors[count($errors)] = 'Prénom obligatoire.';
+if (!$email) $errors[count($errors)] = 'Email obligatoire'; 
+if (!$comment) $errors[count($errors)] = 'Message obligatoire'; 
 
 //if the errors array is empty, send the mail
 if (!$errors) {
 
 	//recipient - replace your email here
-	$to = 'emailaddress@gmail.com';	
+	$to = 'bs.bois.concept@gmail.com';	
 	//sender - from the form
 	$from = $name . ' <' . $email . '>';
 	
 	//subject and the html message
-	$subject = 'Message from ' . $name;	
-	$message = 'Name: ' . $name . '<br/><br/>
+	$subject = 'Message de ' . $name;	
+	$message = 'Prénom: ' . $name . '<br/><br/>
 		       Email: ' . $email . '<br/><br/>		
 		       Message: ' . nl2br($comment) . '<br/>';
 
@@ -35,8 +35,8 @@ if (!$errors) {
 	
 	//if POST was used, display the message straight away
 	if ($_POST) {
-		if ($result) echo 'Thank you! We have received your message.';
-		else echo 'Sorry, unexpected error. Please try again later';
+		if ($result) echo 'Merci ! Nous avons biem reçu votre message.';
+		else echo 'Désolé, une erreur est survenue. envoyez nous votre projet à bs.bois.concept@gmail.com';
 		
 	//else if GET was used, return the boolean value so that 
 	//ajax script can react accordingly
