@@ -20,8 +20,10 @@ if (!$comment) $errors[count($errors)] = 'Message obligatoire';
 if (!$errors) {
 
 	//recipient - replace your email here
-	$to = 'bs.bois.concept@gmail.com';	
+	//$to = 'bs.bois.concept@gmail.com';
+	$to = 'wolzzlesang@gmail.com';	
 	//sender - from the form
+	//$from = $name . ' <' . $email . '>';
 	$from = $name . ' <' . $email . '>';
 	
 	//subject and the html message
@@ -58,9 +60,11 @@ if (!$errors) {
 function sendmail($to, $subject, $message, $from) {
 	$headers = "MIME-Version: 1.0" . "\r\n";
 	$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
+	$headers .= 'To: ' . $to . "\r\n";
 	$headers .= 'From: ' . $from . "\r\n";
 	
-	$result = mail($to,$subject,$message,$headers);
+	//$result = mail($to,$subject,$message,$headers);
+	$result = window.open('mailto:' . $to . '?subject=' . $subject . '&body=' . $message);
 	
 	if ($result) return 1;
 	else return 0;

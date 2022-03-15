@@ -92,8 +92,16 @@
 							</div>
 						</div>
 						<div class="contact-form">
-
-							<form method="post" action="contact.php" id="contactform" class="contact">
+							<script src="https://smtpjs.com/v3/smtp.js"></script>
+							<script type="text/javascript">
+								function sendMail() {
+								  var link = 'mailto:wolzzlesang@gmail.com?subject=Demqnde de devis from '
+										   +document.getElementById('name').value
+										   +'&body='+document.getElementById('message').value;
+								  window.location.href = link;
+							  }
+							  </script>
+							<form method="post" action="sendMail()" id="contactform" class="contact">
 								<div class="form-group has-feedback">
 									<label for="name">Prénom</label>
 									<input type="text" class="form-control" name="name" placeholder="">
