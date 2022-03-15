@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 	<title>BS Bois Concept</title>
 	<link rel="icon" href="img/logo.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +12,7 @@
 	<!-- css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-	<link href="css/jcarousel.css" rel="stylesheet" />
+	<!--link href="css/jcarousel.css" rel="stylesheet" /-->
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
@@ -92,16 +93,12 @@
 							</div>
 						</div>
 						<div class="contact-form">
-							<script src="https://smtpjs.com/v3/smtp.js"></script>
-							<script type="text/javascript">
-								function sendMail() {
-								  var link = 'mailto:wolzzlesang@gmail.com?subject=Demqnde de devis from '
-										   +document.getElementById('name').value
-										   +'&body='+document.getElementById('message').value;
-								  window.location.href = link;
-							  }
-							  </script>
-							<form method="post" action="sendMail()" id="contactform" class="contact">
+
+							<!--form action="mailto:example@example.com?subject=Test" method="post" enctype="text/plain"
+								class="form-horizontal"-->
+
+							<!--form method="get" action="mailto:ahmed.benamrouche@gmail.com" id="contactform"
+								class="contact">
 								<div class="form-group has-feedback">
 									<label for="name">Prénom</label>
 									<input type="text" class="form-control" name="name" placeholder="">
@@ -119,6 +116,43 @@
 									<i class="fa fa-pencil form-control-feedback"></i>
 								</div>
 								<input type="submit" value="Envoyer" id="submit" class="submit btn btn-default">
+							</form-->
+							<!--form action="sendMail()" method="post" enctype="text/plain" class="form-horizontal"-->
+
+							<form method="post" action="javascript:sendMail()" id="contactform" class="contact">
+								<div class="form-group">
+									<label for="name" class="col-sm-2 control-label">Name</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="name" id="name"
+											placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="mobile" class="col-sm-2 control-label">Numéro à contacter</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" name="mobile" id="mobile"
+											placeholder="Mobile/fixe">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email" class="col-sm-2 control-label">Email</label>
+									<div class="col-sm-10">
+										<input type="email" class="form-control" name="email" id="email"
+											placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="message" class="col-sm-2 control-label">Message</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" rows="10" name="message" id="message"
+											placeholder="Your Message"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<button type="submit" class="btn btn-default">Envoyer</button>
+									</div>
+								</div>
 							</form>
 
 
@@ -288,6 +322,24 @@
 	<script src="js/animate.js"></script>
 	<script src="js/contact.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		function sendMail() {
+			var current = new Date();
+			var cDate = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + current.getDate();
+
+			var messageToSend = 'Objet: Demande de devis from ' + document.getElementById('name').value + '%0D%0A';
+			messageToSend += 'Numéro : ' + document.getElementById('mobile').value + '%0D%0A';
+			messageToSend += 'Email : ' + document.getElementById('email').value + '%0D%0A';
+			messageToSend += 'Date : ' + cDate + '%0D%0A %0D%0A %0D%0A';
+			messageToSend += 'Message : ' + '%0D%0A' + document.getElementById('message').value + '%0D%0A';
+			var link = 'mailto:wolzzlesang@gmail.com?subject=Demande de devis from '
+				+ document.getElementById('name').value
+				+ '&body=' + messageToSend;
+			window.location.href = link;
+		}
+	</script>
 </body>
 
 </html>
