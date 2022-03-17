@@ -9,7 +9,7 @@ $comment = isset($_GET['message']) ? $_GET['message'] : $_POST['message'];
 
 ini_set('sendmail_from', $email);
 $sendmail_path = '/usr/sbin/sendmail -t -i -f mail_php@bsboisconcept.com';
-
+pass
 //ini_set('sendmail_path', $email);
 //$sendmail_path = "/usr/sbin/sendmail -t -i";
 
