@@ -11,7 +11,6 @@
 	<!-- css -->
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-	<link href="css/jcarousel.css" rel="stylesheet" />
 	<link href="css/flexslider.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
 
@@ -79,11 +78,15 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<ul class="portfolio-categ filter">
-							<li class="all active"><a href="#">Tous</a></li>
-							<li class="terrasse"><a href="#" title="">Terrasse</a></li>
-							<li class="bardage"><a href="#" title="">Bardage</a></li>
-							<li class="carport"><a href="#" title="">Carport</a></li>
-							<li class="ossature"><a href="#" title="">Ossature</a></li>
+							<li class="all active"><a href="#" id="all">Tous</a></li>
+							<li class="abris"><a href="#" title="" id="abris">Abris</a></li>
+							<li class="chalet"><a href="#" title="" id="chalet">Chalet</a></li>
+							<li class="terrasse"><a href="#" title="" id="terrasse">Terrasse</a></li>
+							<li class="bardage"><a href="#" title="" id="bardage">Bardage</a></li>
+							<li class="carport"><a href="#" title="" id="carport">Carport</a></li>
+							<li class="ossature"><a href="#" title="" id="ossature">Ossature</a></li>
+							<li class="ossature"><a href="#" title="" id="charpente">Charpente</a></li>
+							<li class="ossature"><a href="#" title="" id="portail">Portail</a></li>
 						</ul>
 						<div class="clearfix">
 						</div>
@@ -91,108 +94,164 @@
 							<section id="projects">
 								<ul id="thumbs" class="portfolio">
 									<!-- Item Project and Filter Name -->
-									<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="terrasse">
+									<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="abris">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/1.jpg">
+											title="Cabane jardin - Templeuve (59242)"
+											href="img/services/abris/IMG_3495.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/1.jpg" alt="">
+										<img src="img/services/abris/IMG_3495.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
-									<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="bardage">
+									<li class="item-thumbs col-lg-3 design" data-id="id-1" data-type="abris">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/2.jpg">
+											title="Maison jardin - Seclin (59113)"
+											href="img/services/abris/IMG_3494.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/2.jpg" alt="">
+										<img src="img/services/abris/IMG_3494.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
-									<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="carport">
+									<li class="item-thumbs col-lg-3 photography" data-id="id-2" data-type="bardage">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/3.jpg">
+											title="Bardage Villeneuve d'Ascq (59650)"
+											href="img/services/bardage/IMG_3489.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/3.jpg" alt="">
+										<img src="img/services/bardage/IMG_3489.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
 									<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="bardage">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/4.jpg">
+											title="Bardage Seclin (59113)" href="img/services/bardage/IMG_3491.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/4.jpg" alt="">
+										<img src="img/services/bardage/IMG_3491.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
-									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="bardage">
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/5.jpg">
+											title="Terasse Roubaix (59100)" href="img/services/terrasse/IMG_3485.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/5.jpg" alt="">
+										<img src="img/services/terrasse/IMG_3485.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
-									<li class="item-thumbs col-lg-3 photography" data-id="id-5" data-type="carport">
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/6.jpg">
+											title="Piscine Tourcoing (59200)" href="img/services/terrasse/IMG_3486.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/6.jpg" alt="">
+										<img src="img/services/terrasse/IMG_3486.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
-									<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="terrasse">
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/7.jpg">
+											title="Terasse Tourcoing (59200)" href="img/services/terrasse/IMG_3490.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/7.jpg" alt="">
+										<img src="img/services/terrasse/IMG_3490.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
 									<!-- Item Project and Filter Name -->
-									<li class="item-thumbs col-lg-3 design" data-id="id-0" data-type="ossature">
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
 										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
 										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
-											title="Portfolio name" href="img/works/8.jpg">
+											title="Terasse Hem (59150)" href="img/services/terrasse/IMG_3499.jpg">
 											<span class="overlay-img"></span>
 											<span class="overlay-img-thumb"><i
 													class="icon-info-blocks fa fa-search"></i></span>
 										</a>
 										<!-- Thumb Image and Description -->
-										<img src="img/works/8.jpg" alt="">
+										<img src="img/services/terrasse/IMG_3499.jpg" alt="">
 									</li>
 									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
+											title="Terasse Roubaix (59100)" href="img/services/terrasse/IMG_3501.jpg">
+											<span class="overlay-img"></span>
+											<span class="overlay-img-thumb"><i
+													class="icon-info-blocks fa fa-search"></i></span>
+										</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/services/terrasse/IMG_3501.jpg" alt="">
+									</li>
+									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
+											title="Terasse Roubaix (59100)" href="img/services/terrasse/IMG_3501.jpg">
+											<span class="overlay-img"></span>
+											<span class="overlay-img-thumb"><i
+													class="icon-info-blocks fa fa-search"></i></span>
+										</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/services/terrasse/IMG_3501.jpg" alt="">
+									</li>
+									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
+											title="Terasse Villeneuve d'Ascq (59650)"
+											href="img/services/terrasse/IMG_3503.jpg">
+											<span class="overlay-img"></span>
+											<span class="overlay-img-thumb"><i
+													class="icon-info-blocks fa fa-search"></i></span>
+										</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/services/terrasse/IMG_3503.jpg" alt="">
+									</li>
+									<!-- End Item Project -->
+									<!-- Item Project and Filter Name -->
+									<li class="item-thumbs col-lg-3 photography" data-id="id-4" data-type="terrasse">
+										<!-- Fancybox - Gallery Enabled - Title - Full Image -->
+										<a class="hover-wrap fancybox" data-fancybox-group="gallery"
+											title="Terasse Villeneuve d'Ascq (59650)"
+											href="img/services/terrasse/IMG_3503.jpg">
+											<span class="overlay-img"></span>
+											<span class="overlay-img-thumb"><i
+													class="icon-info-blocks fa fa-search"></i></span>
+										</a>
+										<!-- Thumb Image and Description -->
+										<img src="img/services/terrasse/IMG_3503.jpg" alt="">
+									</li>
 								</ul>
 							</section>
 						</div>
@@ -344,3 +403,19 @@
 </body>
 
 </html>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		// Create a new URL object
+		var address = new URL(window.location);
+		// Get searchParameters property of the URL object
+		var queryParameters = address.searchParams;
+
+		// Retrieve specific query parameters
+		var filterFromQuerystring = queryParameters.get("filter");
+
+		const link = document.getElementById(filterFromQuerystring);
+		link.click();
+	});
+</script>
