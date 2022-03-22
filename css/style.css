@@ -95,12 +95,12 @@ header .navbar {
     font-weight: 700;
     line-height: 1em;
     letter-spacing: -1px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 0 0 0 15px;
 }
 .navbar-default .navbar-brand {
     color: #1891EC;
-    margin-top: 4px;
+    /*margin-top: 4px;*/
 }
 header .navbar-collapse ul.navbar-nav {
     float: right;
@@ -1556,7 +1556,8 @@ article .align-right {
   background: rgba(255, 255, 255, 1); 
 }
 .flex-control-paging li a.flex-active {
-  background: #EA2D2D;
+  /* background: #EA2D2D; */
+  background: #91BD09;
 }
 .navbar-toggle {
   position: relative;
